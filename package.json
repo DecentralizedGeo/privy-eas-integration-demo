@@ -1,0 +1,46 @@
+{
+  "name": "privy-eas-integration-demo",
+  "version": "1.0.0",
+  "description": "A demo application showcasing how to use Privy for authentication and embedded wallets to sign and submit on-chain location attestations to the Ethereum Attestation Service (EAS).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "export-wallet": "tsx src/export-wallet.ts",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tsconfig/node22": "^22.0.2",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.3.1",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "@vitejs/plugin-react": "^4.0.0",
+    "nodemon": "^3.1.10",
+    "prettier": "^3.6.2",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2",
+    "@types/leaflet": "^1.9.3",
+    "vite": "^5.1.0"
+  },
+  "dependencies": {
+    "@ethereum-attestation-service/eas-sdk-v2": "^1.0.0-beta.1",
+    "@privy-io/node": "^0.2.0",
+    "@privy-io/react-auth": "latest",
+    "@wagmi/core": "^2.22.1",
+    "dotenv": "^17.2.2",
+    "ethers": "^6.12.0",
+    "express": "^5.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "viem": "^2.19.2",
+    "wagmi": "^2.18.1",
+    "react-leaflet": "^4.2.0",
+    "leaflet": "^1.9.4",
+    "leaflet-draw": "^1.0.4"
+  }
+}

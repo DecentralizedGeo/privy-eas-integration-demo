@@ -1,0 +1,296 @@
+body {
+    font-family: system-ui, Arial, sans-serif;
+    background: #1f2937;
+    color: #e5e7eb;
+}
+
+a {
+    color: #5488e8;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #bf7f00;
+}
+
+.form-card {
+    max-width: 720px;
+    margin: 20px auto;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+    background: #fff;
+    color: #1f2937;
+}
+.form-row { margin-bottom: 14px; display:flex; flex-direction:column }
+.form-row label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #111827;
+}
+
+.form-row input,
+.form-row select {
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    transition: border-color 0.2s;
+    background: #fff;
+    color: #1f2937;
+}
+
+.form-row input:focus,
+.form-row select:focus {
+    outline: none;
+    border-color: #10b981;
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+}
+.form-actions { margin-top: 18px }
+.button-base {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer
+}
+
+/* Primary action button (used across components) - Location Protocol cyan */
+.btn-primary {
+    background: #10b981;
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 8px;
+}
+
+.btn-primary:hover:not(:disabled) {
+    background: #059669;
+}
+
+/* Header styles - Location Protocol deep blue */
+.app-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 24px;
+    min-height: 72px;
+    background: #3b4a7d;
+    color: #fff;
+    gap: 24px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header-logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 8px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.header-title {
+    margin: 0;
+    font-size: 20px
+}
+
+.header-center {
+    display: flex;
+    align-items: center;
+    gap: 8px
+}
+
+/* Make the chain selector and balance appear in a two-row grid */
+.header-center.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    align-items: start
+}
+
+.header-center .grid-row {
+    display: flex;
+    flex-direction: column
+}
+
+.header-center .grid-row.bottom {
+    align-items: end
+}
+
+.balance-label {
+    text-align: right;
+    font-size: 13px;
+    color: #cbd5e1
+}
+
+.balance-value {
+    text-align: left;
+    font-weight: 600
+}
+
+.header-center.stacked {
+    display: flex;
+    flex-direction: column
+}
+
+.header-center.stacked .chain-select {
+    min-width: 220px
+}
+
+.chain-select {
+    padding: 6px 8px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff
+}
+
+.chain-select:hover {
+    border-color: rgba(255, 255, 255, 0.4);
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.chain-label {
+    text-align: right;
+    font-size: 13px;
+    color: #cbd5e1
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 12px
+}
+
+.signed-in {
+    display: flex;
+    align-items: center;
+    gap: 12px
+}
+
+.signed-in-line {
+    font-size: 14px;
+    color: #e2e8f0;
+}
+
+.mono {
+    font-family: monospace;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: #f0f9ff;
+}
+
+.btn-logout {
+    background: #dc2626;
+    color: #fff;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-logout:hover {
+    background: #b91c1c;
+}
+
+/* Card styles */
+.card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 18px;
+    margin: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    color: #1f2937;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #111827;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 8px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.debug-pre {
+    max-height: 240px;
+    overflow: auto;
+    background: #0b1220;
+    color: #dbeafe;
+    padding: 12px;
+    border-radius: 6px;
+    font-family: monospace;
+}
+
+.wrapped-signature {
+    word-break: break-all;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+}
+
+.json-response {
+    white-space: pre;
+    word-wrap: normal;
+    overflow-x: auto;
+    background: #f6f6f6;
+    padding: 12px;
+    border-radius: 6px;
+    font-family: monospace;
+    font-size: 13px;
+    color: #1f2937;
+    max-height: 300px;
+    overflow-y: auto;
+    max-width: 55vh;
+}
+
+/* Responsive */
+@media (max-width: 880px) {
+    .app-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px
+    }
+}
+
+/* Top-three grid: three columns for large screens, stack on small screens */
+.top-three {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 0.75fr 1fr 1fr;
+    /* three equal columns */
+    align-items: start;
+    margin-bottom: 20px;
+}
+
+.top-three .map-card {
+    min-height: 56vh;
+}
+
+.top-three .form-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (max-width: 1500px) {
+    .top-three {
+        grid-template-columns: 1fr;
+        align-items: start;
+        gap: 20px;
+    }
+}
