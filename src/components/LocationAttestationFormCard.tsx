@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useEffect, useCallback } from 'react'
-import { EAS, SchemaEncoder } from '@ethereum-attestation-service/eas-sdk-v2'
+import { EAS, SchemaEncoder } from '@ethereum-attestation-service/eas-sdk'
 import { useWallets } from '@privy-io/react-auth'
 import { useSigner as useWagmiSigner, useProvider as useWagmiProvider } from '../eas-wagmi-utils'
 import { getChainNetworkDetails, DEFAULT_SCHEMA_STRING } from '../config/eas-config'
